@@ -17,7 +17,25 @@ public class Mitarbeiter {
 
 	public String getInfo(String flag) {
 		// switch ..
-		return null;
+		switch (flag) {
+			case "#familyName":
+				return familyName;
+			case "#firstName":
+				return firstName;
+			case "#role":
+				return role;						
+			default:
+				return "ERROR!";
+		}
+
 	}
+
+	public String getYaerOfEntry(){
+		return String.valueOf(yearOfEntry);
+	}
+
+	// public int setYearofEntry(){
+	// 	return yearOfEntry;
+	// }
 
 }
