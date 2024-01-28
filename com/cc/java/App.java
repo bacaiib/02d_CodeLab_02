@@ -8,12 +8,13 @@ public class App {
 		Mitarbeiter mitarbeiter2 = new Mitarbeiter("Putin","Vladimir","Untertane",2005);
 		Mitarbeiter mitarbeiter3 = new Mitarbeiter("Neumann","Thomas","Innhaber",2004);
 
-		Mitarbeiter[] mitarbeiters = { mitarbeiter1, mitarbeiter2, mitarbeiter3 };
+		Mitarbeiter[] mitarbeiters;
+		mitarbeiters = new Mitarbeiter[] { mitarbeiter1, mitarbeiter2, mitarbeiter3 };
 
 		for (Mitarbeiter mitarbeiter : mitarbeiters) {
 				outputInfo(mitarbeiter);
 		}
-	}
+	}																												
 
 		public static void outputInfo(Mitarbeiter mitarbeiter){
 			output(mitarbeiter.getInfo("#familyName"));
